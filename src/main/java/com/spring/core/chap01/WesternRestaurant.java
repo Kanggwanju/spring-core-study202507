@@ -9,9 +9,9 @@ public class WesternRestaurant implements Restaurant {
     // 요리 코스 구성
     private Course course;
 
-    public WesternRestaurant() {
-        this.mainChef = new JannChef();
-        this.course = new FrenchCourse();
+    public WesternRestaurant(Chef chef, Course course) {
+        this.mainChef = chef;
+        this.course = course;
     }
 
     // 주문 기능

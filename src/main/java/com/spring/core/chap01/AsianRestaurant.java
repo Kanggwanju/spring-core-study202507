@@ -7,9 +7,9 @@ public class AsianRestaurant implements Restaurant {
     // 코스 메뉴
     private Course course;
 
-    public AsianRestaurant() {
-        this.mainChef = new KimuraChef();
-        this.course = new SushiCourse();
+    public AsianRestaurant(Chef chef, Course course) {
+        this.mainChef = chef;
+        this.course = course;
     }
 
     @Override
