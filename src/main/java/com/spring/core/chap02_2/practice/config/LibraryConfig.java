@@ -10,7 +10,8 @@ import java.util.List;
 
 @Configuration
 public class LibraryConfig {
-
+    
+    // 책 목록을 나대신 스프링이 만들어서 관리해줘
     @Bean
     public List<Book> bookList() {
         List<Book> books = new ArrayList<>(List.of(
@@ -20,7 +21,8 @@ public class LibraryConfig {
         ));
         return books;
     }
-
+    
+    // 도서관도 나대신 만들어주고 책을 생성자로 주입해줘
     @Bean
     public Library library() {
         return new Library(bookList());

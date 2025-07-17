@@ -9,6 +9,10 @@ public class MusicPlayer {
     }
 
     public void playMusic() {
+        if (speaker == null) {
+            System.out.println("스피커가 세팅되지 않았습니다.");
+            return;
+        }
         System.out.println("음악을 재생합니다.");
         speaker.playSound();
     }
