@@ -4,11 +4,11 @@ package com.spring.core.chap01;
 public class Hotel {
 
     // 레스토랑 입점
-    private Restaurant restaurant;
+    private final Restaurant restaurant;
 
     // 헤드쉐프 고용
 //    private JannChef headChef; // DIP 위반
-    private Chef headChef;
+    private final Chef headChef;
 
     // 생성자
 
