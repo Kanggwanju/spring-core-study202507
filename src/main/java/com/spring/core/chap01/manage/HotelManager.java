@@ -7,12 +7,12 @@ public class HotelManager {
 
     // 셰프를 고용하는 기능 - 셰프 객체 생성을 위임
     public Chef chef() {
-        return new JannChef();
+        return new StephaneChef();
     }
 
     // 코스를 개발하는 기능
     public Course course() {
-        return new FrenchCourse();
+        return new ItalianCourse();
     }
 
     // 레스토랑을 입점하는 기능
