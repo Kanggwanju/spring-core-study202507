@@ -14,7 +14,7 @@ public class ProductService {
         System.out.println("ProductRepository 의존성이 ProductService 주입됨!");
     }
 
-    public void findProduct() {
-        System.out.println("물건을 찾습니다. -> " + repository.getProduct());
+    public String findProduct() {
+        return "데이터정제: " + repository.getProduct();
     }
 }
